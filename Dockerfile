@@ -11,7 +11,8 @@ RUN rm -f /opt/ant/apache-ant-1.9.8-bin.tar.gz
 #Drop Sonarqube lib
 RUN wget http://downloads.sonarsource.com/plugins/org/codehaus/sonar-plugins/sonar-ant-task/2.3/sonar-ant-task-2.3.jar -P /opt/ant/apache-ant-1.9.8/lib/
 #Install JDK 1.8
-RUN apk --update add openjdk8
+RUN apk --update add openjdk17.0.13
+#RUN apk --update add openjdk8
 #Install GIT
 RUN apk --update add git
 #Install Curl
